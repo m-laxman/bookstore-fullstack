@@ -1,0 +1,105 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/LaxmanBookstoreOrder/api/categories
+Accept: application/json
+
+###
+# curl 'http://localhost:8080/LaxmanBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Cache-Control: max-age=0'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Windows"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1003,"title":"The Love of My Life","author":"Rosie Walsh","description":"","price":799,"rating":0,"isPublic":false,"isFeatured":false,"categoryId":1001},"quantity":1},{"book":{"bookId":1004,"title":"The Paris Apartment","author":"Lucy Foley","description":"","price":925,"rating":0,"isPublic":true,"isFeatured":false,"categoryId":1001},"quantity":1},{"book":{"bookId":1005,"title":"One of Us is Lying","author":"Karen M McManus","description":"","price":550,"rating":0,"isPublic":true,"isFeatured":false,"categoryId":1001},"quantity":2}]},"customerForm":{"name":"John","address":"John","phone":"2585659856","email":"laxman@vt.edu","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/LaxmanBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1003,
+          "title": "The Love of My Life",
+          "author": "Rosie Walsh",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "bookId": 1004,
+          "title": "The Paris Apartment",
+          "author": "Lucy Foley",
+          "description": "",
+          "price": 925,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "bookId": 1005,
+          "title": "One of Us is Lying",
+          "author": "Karen M McManus",
+          "description": "",
+          "price": 550,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 2
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "John",
+    "address": "John",
+    "phone": "9898989898",
+    "email": "laxman@vt.edu",
+    "ccNumber": "44443333222211",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+
